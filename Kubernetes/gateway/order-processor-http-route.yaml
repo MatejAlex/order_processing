@@ -8,12 +8,12 @@ spec:
     - name: gateway
       sectionName: http
   hostnames:
-    - "order.processor"
+    - "internal.foo.company"
   rules:
     - matches:
         - path:
             type: PathPrefix
-            value: /
+            value: /order
       backendRefs:
         - name: order-processor-service
           port: 80

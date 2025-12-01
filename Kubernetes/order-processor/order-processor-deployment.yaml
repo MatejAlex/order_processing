@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: order-processor
-  name: order-processor
+  name: order-processor-deployment
   namespace: order-processor
 
 spec:
